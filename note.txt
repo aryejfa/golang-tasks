@@ -1,0 +1,33 @@
+go get github.com/go-sql-driver/mysql
+go get github.com/gin-gonic/gin
+go get github.com/jinzhu/gorm
+
+
+go run main.go
+
+src/api/controllers
+src/api/models
+src/api/routes
+
+GET		: localhost:8080/tasks
+
+POST	: localhost:8080/tasks
+{
+	"assignedTo" : "aryejfa@gmail.com",
+	"task" : "oke aja",
+	"deadline" : "2021-11-13"
+}
+
+GET		: localhost:8080/tasks/:id
+http://localhost:8080/tasks/1
+
+PATCH	: localhost:8080/tasks/:id
+http://localhost:8080/tasks/1
+{
+	"assignedTo" : "aryejfa@gmail.com",
+	"task" : "oke aja",
+	"deadline" : "2021-11-13"
+}
+
+DELETE	: localhost:8080/tasks/:id
+http://localhost:8080/tasks/1
